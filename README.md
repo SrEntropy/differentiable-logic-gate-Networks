@@ -1,8 +1,49 @@
-# npc25-difflogic-4-control
+# NPC25-difflogic-4-control
 NPC25 Exploring Differential Logic Networks for Control
+workshop:  [Telluride Neuromophs](https://sites.google.com/view/telluride-2025/home)
 
 Papers to read:
 1) [Deep Differentiable Logic Gate Networks](https://arxiv.org/abs/2210.08277)
+# Differentiable Logic Gate Networks
+
+## Overview
+This project builds on the ideas from [Deep Differentiable Logic Gate Networks](https://arxiv.org/abs/2210.08277), exploring how Boolean logic operations can be represented in continuous, differentiable space.  
+By making logic gates trainable with gradient descent, we aim to bridge symbolic reasoning and deep learning.
+
+---
+
+## Motivation
+Traditional neural networks excel at pattern recognition but struggle with explicit logical reasoning.  
+Differentiable logic gates provide:
+- A way to embed symbolic rules into neural architectures
+- Residual learning capacity for hybrid models
+- Potential applications in neuromorphic AI and event‑driven vision
+
+---
+
+## Dataset & Testing
+- **MNIST (event‑driven images)** was used as the initial benchmark to validate the architecture.  
+- The network achieved strong classification accuracy while demonstrating the feasibility of differentiable logic gate learning.  
+- Next step: integration with a **real event‑driven camera**, extending the approach to neuromorphic hardware.
+
+---
+
+## Features
+- Differentiable AND, OR, XOR, and other Boolean gates  
+- Gradient‑based training for logical functions  
+- Conversion utilities for exporting trained networks to Verilog  
+- Event‑driven dataset compatibility  
+
+---
+
+## Purpose
+This repo serves as a **research playground** for experimenting with differentiable logic gates.  
+It is designed for students, researchers, and practitioners interested in:
+- Neuromorphic computing  
+- Symbolic‑connectionist hybrid models  
+- Event‑driven vision and real‑time AI systems  
+
+---
 
 ## Prerquisites
 
@@ -39,3 +80,7 @@ BIN TEST loss=0.075 acc=97.74%
 ```bash
 uv run pth_to_npz.py INSERT_PTH_FILENAME_HERE
 ```
+---
+## 📜 License
+MIT License. Free to use, modify, and share.
+
