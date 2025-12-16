@@ -1,6 +1,5 @@
-# NPC25-difflogic-4-control
-NPC25 Exploring Differential Logic Networks for Control
-workshop:  [Telluride Neuromophs](https://sites.google.com/view/telluride-2025/home)
+# NPC25 Exploring Differential Logic Networks for Control
+- workshop:  [Telluride Neuromophs](https://sites.google.com/view/telluride-2025/home)
 
 Papers to read:
 1) [Deep Differentiable Logic Gate Networks](https://arxiv.org/abs/2210.08277)
