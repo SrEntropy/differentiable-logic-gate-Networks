@@ -6,8 +6,8 @@ Papers to read:
 # Differentiable Logic Gate Networks
 
 ## Overview
-This project builds on the ideas from [Deep Differentiable Logic Gate Networks](https://arxiv.org/abs/2210.08277), exploring how Boolean logic operations can be represented in continuous, differentiable space.  
-By making logic gates trainable with gradient descent, we aim to bridge symbolic reasoning and deep learning.
+This project explores **Differentiable Logic Gate Networks**, inspired by [Deep Differentiable Logic Gate Networks](https://arxiv.org/abs/2210.08277).  
+DLGNs embed Boolean logic operations into continuous, differentiable space, enabling gradient‑based learning of logical functions and hybrid models that bridge symbolic reasoning with deep learning.
 
 ---
 
@@ -20,28 +20,33 @@ Differentiable logic gates provide:
 
 ---
 
-## Dataset & Testing
-- **MNIST (event‑driven images)** was used as the initial benchmark to validate the architecture.  
-- The network achieved strong classification accuracy while demonstrating the feasibility of differentiable logic gate learning.  
-- Next step: integration with a **real event‑driven camera**, extending the approach to neuromorphic hardware.
+## 🎯 Applications
+We implemented and tested DLGNs in two domains:
 
+1. **Event‑Driven Vision**
+   - Benchmarked on the **MNIST event‑driven dataset** to validate classification accuracy.  
+   - Extended to integration with a **real event‑driven camera**, demonstrating feasibility for neuromorphic hardware and real‑time vision tasks.
+
+2. **Control: CartPole Balancing**
+   - Applied DLGNs to the classic **CartPole control problem**.  
+   - The network learned residual corrections to stabilize the pole, showcasing how differentiable logic gates can support adaptive control policies.
 ---
 
 ## Features
 - Differentiable AND, OR, XOR, and other Boolean gates  
 - Gradient‑based training for logical functions  
+- Residual learning for hybrid symbolic‑connectionist models  
 - Conversion utilities for exporting trained networks to Verilog  
-- Event‑driven dataset compatibility  
+- Compatibility with event‑driven datasets and control environments
 
 ---
-
-## Purpose
-This repo serves as a **research playground** for experimenting with differentiable logic gates.  
+## 🚀 Purpose
+This repo serves as a **research playground** for experimenting with differentiable logic gates in both **vision** and **control**.  
 It is designed for students, researchers, and practitioners interested in:
 - Neuromorphic computing  
 - Symbolic‑connectionist hybrid models  
-- Event‑driven vision and real‑time AI systems  
-
+- Event‑driven vision systems  
+- Adaptive control in dynamic environments  
 ---
 
 ## Prerquisites
